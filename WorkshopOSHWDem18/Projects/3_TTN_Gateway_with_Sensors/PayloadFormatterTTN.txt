@@ -1,0 +1,10 @@
+function Decoder(bytes, port) {
+  // Decode an uplink message from a buffer
+  var temp = (bytes[2]-100) + (bytes[3]>99? bytes[3]/10 :bytes[3])*0.01;
+  var hum = bytes[5]/2;
+  
+  return {
+    Temp: temp,
+    Hum: hum
+  };
+}
