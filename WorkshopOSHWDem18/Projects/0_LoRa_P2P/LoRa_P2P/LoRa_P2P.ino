@@ -14,19 +14,19 @@
 #include <SPI.h>              // include libraries
 #include <LoRa.h>    //https://github.com/sandeepmistry/arduino-LoRa
 
-#define SX1278_SCK  D5   // GPIO5  -- SX1278's SCK
-#define SX1278_MISO D6   // GPIO19 -- SX1278's MISO
-#define SX1278_MOSI D7   // GPIO27 -- SX1278's MOSI
-#define SX1278_CS   D8   // GPIO18 -- SX1278's CS
-#define SX1278_RST  D4   // GPIO14 -- SX1278's RESET
-#define SX1278_DI0  D3   // GPIO26 -- SX1278's IRQ(Interrupt Request)
+#define RFM95W_SCK  D5 // GPIO14 -- RFM95W's SCK
+#define RFM95W_MISO D6 // GPIO12 -- RFM95W's MISO
+#define RFM95W_MOSI D7 // GPIO13 -- RFM95W's MOSI
+#define RFM95W_CS   D8 // GPIO15 -- RFM95W's CS
+#define RFM95W_RST  D4 // GPIO2  -- RFM95W's RESET NOT USED! Pin not connected to ESP8266
+#define RFM95W_DI0  D3 // GPIO0  -- RFM95W's IRQ(Interrupt Request) NOT USED! Pin not connected to ESP8266
 
 #define LORA_BAND   868E6
 
 //////////////////////CONFIG///////////////////////////
 byte localAddress = XX;     // address of this device
-byte destination = XX;      // destination to send to
-String message = "Hello!";   // send a message
+byte destination  = XX;      // destination to send to
+String message    = "Hello!";   // send a message
 ///////////////////////////////////////////////////////
 
 int interval = 2000;          // interval between sends
@@ -94,7 +94,7 @@ void setup() {
 
   //SPI.begin(SX1278_SCK, SX1278_MISO, SX1278_MOSI, SX1278_CS);
   // override the default CS, reset, and IRQ pins (optional)
-  LoRa.setPins(SX1278_CS, SX1278_RST, SX1278_DI0);// set CS, reset, IRQ pin
+  LoRa.setPins(RFM95W_CS, RFM95W_RST, RFM95W_DI0);// set CS, reset, IRQ pin
 
   if (!LoRa.begin(LORA_BAND))
   {             // initialize ratio at 868 MHz
