@@ -30,6 +30,18 @@ La BricoLabs ESP8266 LoRa Shield presenta un problema no detectado hasta su mont
 
 También para el taller se ha cortado el solder jumper JP1 quedando desconectado el dio2 del módulo LoRa y el pin D0 del ESP8266.
 
+### Materiales taller
+
+* BricoLabs ESP8266 LoRa Shield
+  * Módulo LoRa RFM95W 868MHz: https://goo.gl/Lq5xBn o https://goo.gl/x9Ruqk
+  * Conector antena SMA: https://goo.gl/uX1qVK
+  * Antena SMA 868MHz https://goo.gl/3MmXzr
+  * Condensador 1uF 0805: https://goo.gl/9gNtP3
+  * Condensador 10uF 0805: https://goo.gl/FJRFJw
+* ESP8266 WeMos D1 mini  https://goo.gl/JqPN6Y
+* Shield Temperatura y humedad SHT30 https://goo.gl/2b3S51
+
+
 ## Contribuye!
 
 Si ves algun error o quieres contribuir con algun ejemplo o modificación envíanos un pull request!
