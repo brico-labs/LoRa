@@ -1,0 +1,6 @@
+P1, P2: 8 pin female header long pins
+U1: RFM95W //https://goo.gl/Lq5xBn or https://goo.gl/x9Ruqk
+C1: Capacitor 1uF 0805 //https://goo.gl/9gNtP3
+C2: Capacitor 10uF 0805 //https://goo.gl/FJRFJw
+A2: SMA antenna connector //https://goo.gl/uX1qVK
+J1,J2: 2pin female header
