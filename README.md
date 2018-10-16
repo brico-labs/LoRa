@@ -6,6 +6,8 @@ Repositorio de proyectos relacionados con LoRa
 
 Documentación del taller "Introducción a las comunicaciones LoRa y LoRaWAN"
 
+[![](http://img.youtube.com/vi/2HwpRMHNrcs/0.jpg)](http://www.youtube.com/watch?v=2HwpRMHNrcs "Vídeo del taller en YouTube")
+
 Incluye:
 
 * La presentación del taller
