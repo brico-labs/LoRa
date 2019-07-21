@@ -18,6 +18,8 @@ Edit ```src/ttn-node.cpp``` and modify around line 50 according TTN node data:
 2. Put a jumper wire connecting D3 and D1 pin headers
 3. Put a jumper wire connecting D4 and D2 pin headers
 
+![lora wemos hack](lora_wemos_hack.jpg)
+
 ## Compile and upload:
 
     pio run -t upload
